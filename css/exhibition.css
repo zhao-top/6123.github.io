@@ -1,0 +1,267 @@
+/* 人物展示 */
+.exhibition_div {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 0px;
+	left: 20%;
+	width: 60%;
+	height: 100%;
+	z-index: 0;
+}
+
+.exhibition_div img {
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+}
+
+/* 左边蓝裙子人物 */
+#character1 {
+	position: absolute;
+	left: 6%;
+	top: 15%;
+	width: 40%;
+	height: 80%;
+}
+
+#character1 img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+/* 右边小女孩 */
+#character2 {
+	position: absolute;
+
+	right: 6%;
+	top: 15%;
+	width: 45%;
+	height: 80%;
+}
+
+#character2 img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+/* 详细介绍 框的样式 */
+#intro_text_divl {
+	position: absolute;
+
+	left: 2%;
+	top: 20%;
+	width: 17%;
+	height: 66%;
+}
+
+/* 名字标签1 发钗 */
+#tag_img1 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 23%;
+	left: 8%;
+}
+
+#intro_tag_img1 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+/* 名字标签4 高髻*/
+#tag_img4 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 18%;
+	left: 18%;
+}
+
+#intro_tag_img4 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+/* 名字标签3  对襟窄袖上衫*/
+#tag_img3 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 42%;
+	left: 6%;
+}
+
+#intro_tag_img3 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+/* 名字标签2 披帛*/
+#tag_img2 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 63%;
+	left: 9%;
+}
+
+#intro_tag_img2 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+/* 名字标签5 三白妆*/
+#tag_img5 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 28%;
+	left: 18%;
+}
+
+#intro_tag_img5 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+
+/* 名字标签6 齐胸襦裙*/
+#tag_img6 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 57%;
+	left: 26%;
+}
+
+#intro_tag_img6 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+/* 名字标签11 垂练髻 */
+#tag_img11 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 48%;
+	left: 53%;
+}
+
+#intro_tag_img11 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+/* 名字标签12 窄袖长衫 */
+#tag_img12 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 53%;
+	left: 65%;
+}
+
+#intro_tag_img12 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+/* 名字标签13 平头鞋 */
+#tag_img13 {
+
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 70%;
+	left: 77%;
+}
+
+#intro_tag_img13 {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	position: absolute;
+	top: 2%;
+	right: 0%;
+	width: 60%;
+	height: auto;
+	z-index: 7;
+}
+
+
+#intro_text_divr {
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	width: 18%;
+	height: 66%;
+}
+
+
+@font-face {
+	font-family: SXSLKJ;
+	src: url(../fonts/苏新诗柳楷简.ttf);
+}

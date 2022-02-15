@@ -1,0 +1,58 @@
+
+/* 人物图片静态 样式 */
+/* 场景图片样式*/
+#character {
+	position: absolute;
+	float: right;
+	width: 80%;
+	margin: 6% 8%;
+}
+
+/* 材料框 */
+#materialSelectDiv_style {
+	/* background-color: #5F9EA0; */
+	background-color: rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	float: left;
+	margin: 7% 8%;
+	width: 14%;
+	border-radius: 15px;
+	height: 84%;
+}
+
+/* 材料图片样式 */
+.material_img_style {
+	margin-top: 6%;
+	margin-left: 10%;
+	float: left;
+	width: 80%;
+}
+
+
+/* 人物对话 消息提示 */
+	
+#dialogue_l{
+	position: absolute;
+	width: 32%;
+	top: 10%;
+	left: 12%;
+}
+#dialogue_l img{
+	width: 100%;
+}
+
+#dialogue_r{
+	position: absolute;
+	width: 32%;
+	top: 12%;
+	right: 2%;
+}
+#dialogue_r img{
+	width: 100%;
+}
+
+/* 引入外部字体 */
+@font-face {
+	font-family: SXSLKJ;
+	src: url(../fonts/苏新诗柳楷简.ttf);
+}

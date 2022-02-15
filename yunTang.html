@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>游戏互动——熨烫</title>
+		<link rel="stylesheet" type="text/css" href="css/yunTang.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/yunTang.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+
+		<style>
+			.bodybg {
+				background-image: url(img/backgroundimg.png);
+				background-size: contain;
+				position: absolute;
+				top: 0%;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body style="background-image: url(img/backgroundimg.png);
+	background-size: 200% ;">
+	
+		<!-- 音乐播放 -->
+		<div class="bg_music">
+			<div class="playerImgDiv">
+				<img class="player_img" src="music/player.png" alt="图片丢失"/>
+			</div>
+			<audio class="player" src="music/DY_LSJ.mp3" autoplay="autoplay" controls preload="auto"></audio>		
+		</div>
+		
+	
+		<!-- 介绍部分界面布局 -->
+		<div class="introDiv_style">
+			<ul class="introDiv_style_ul">
+				<li class="p_head">【熨烫】</li>
+				<p>
+					三人扯练，一人熨烫，扯练者因向后用力而后倾，熨烫者一手扶练一手持木柄金属勺状“熨斗”，
+					勺中是烧红的木炭，将捣练时因捆扎而产生的褶皱细细熨平				
+				</p>
+			</ul>
+			<br />
+			<ul class="introDiv_style_ul">
+				<li class="p_head">【物品】</li>
+				<p>
+					熨斗:这个名称的来历，一是因为它长得像天上的北斗星，也叫“北斗”，
+					二是熨斗的外形如古代一种烹调用具“熨斗”，熨斗像一只没有脚的平底锅，
+					在烫衣服之前，把烧红的木炭放进使用的平底里，等到底部烧热以后，
+					就可以熨衣服了，故也叫“火斗”。有人还叫“金斗”，“金斗”则是采用鎏金工艺精致的熨斗，
+					那不是一般的民间用品。现在留存下来的熨斗多为明清之物，明清时期，不仅仅是青铜熨斗，
+					像瓷制，木制的也有很多，大大扩展了熨斗的用料范围。
+					火盆:花纹精美，且三层皆有不同，两侧有提手，配有用来加炭的带链绳的火筷子，
+					最下面一层是空的，用来通风助燃。
+				</p>
+			</ul>
+			<br />
+			
+			<div class="introDiv_style_img">
+				<img  src="img/Q_character/3-1.gif" alt="图片丢失" class="Q_1" />
+				<img  src="img/Q_character/Q-1.png" alt="图片丢失" class="Q_2" />
+				<img  src="img/Q_character/Q-1.png" alt="图片丢失" class="Q_3" />
+			</div>
+
+		</div>
+
+		<!-- 游戏部分界面布局 -->
+		<div class="gameDiv_style">
+
+			<!-- 温度条图片变换 -->
+			<div id="WD_div">
+				<img id="WD_img" src="img/yunTang/WD_0.png" alt="图片丢失"/>
+			</div>
+
+			
+			<!-- 动态场景人物显示 -->
+			<div id="characterSelectDiv_style">
+				
+				<!-- 人物对话提示 左 -->
+				<div id="dialogue_l">
+					<img id="dialogue_l1" src="img/yunTang/1挥动扇子.png" alt="图片丢失"/>
+					<img id="dialogue_l2" src="img/yunTang/5恭喜过关.png" alt="图片丢失"/>
+				</div>
+				
+				<!-- 人物对话提示 右 -->
+				<div id="dialogue_r">
+					<img id="dialogue_r1" src="img/yunTang/2不要多次.png" alt="图片丢失"/>
+				</div>
+				
+				<!-- 人物对话提示 下 -->
+				<div id="dialogue_b">
+					<img id="dialogue_b1" src="img/yunTang/3加油.png" alt="图片丢失"/>
+					<img id="dialogue_b2" src="img/yunTang/4糟糕.png" alt="图片丢失"/>
+				</div>
+				
+				<!-- 成功通关提示框 -->
+				<div id="success_div">
+					<p>恭喜通关，点击进入下一关</p>
+				</div>
+				
+				<img id="character1" src="img/yunTang/TU3_2.gif" alt="图片丢失" />				
+
+				<div id="character_btn">
+					<img id="character2" src="img/yunTang/Y_left5.png" alt="图片丢失" />
+				</div>
+
+			</div>
+			
+			
+			<!-- 重新开始按钮 -->
+			<div id="gameAgain_btn">
+				<img id="gameAgain_btn_img" src="img/yunTang/again_btn.png" />
+			</div>
+
+			<!-- 返回按钮 -->
+			<div id="back_btn">
+				<img id="back_btn_img" src="img/common/back_button.png" />
+			</div>
+
+
+			<!-- home按钮 -->
+			<div id="home_btn">
+				<img id="home_btn_img" src="img/common/home_btn.png" alt="图片丢失" />
+			</div>
+
+
+		</div>
+
+
+		<!-- 游戏提示消息框 -->
+					<div class="messageDiv_style">
+						<img id="messageDiv_style_img" src="img/common/tip_messageA_1.png" alt="图片丢失"/>
+						<p >请挥动扇子，控制温度到合适时，即可通关。</p>
+					</div>
+		
+
+	</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* 动态场景展示 */
+#intro_div {
+	/* background: rgba(0, 0, 0, 0.1); */
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	width: 90%;
+	height: 46%;
+}
+
+#LX {
+	position: absolute;
+	width: 100%;
+}
+
+/* 游戏界面 */
+#game_div {
+	/* background: rgba(0, 0, 0, 0.1); */
+	position: absolute;
+	left: 7%;
+	width: 20%;
+	top: 10%;
+	height: 28%;
+	border-radius: 15px;
+}
+#game_bg{
+	position: absolute;
+	top: 1%;
+	left: 0px;
+}
+
+/* 游戏 开始按钮 */
+#startGame_btn_img{
+	position: absolute;
+	top:84%;
+	width: 8%;
+	left: 10%;
+}
+
+/* 拼图游戏界面样式 */
+.piece_container {
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	top: 0%;
+	width: 204px;
+    height: 710px;
+	margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+/* 拼图页面中生成的小div，每个小拼图的样式 */
+.piece_container div {
+    float: left;
+    margin: 1px;
+}
+
+.cover{
+	position: absolute;
+	top: 0%;
+	width: 204px;
+	height: 710px;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+	z-index: 8;
+}
+
+/* 人物对话提示 左 */
+#dialogue_l{
+	position: absolute;
+	top: 6%;
+	left: 10%;
+	width: 30%;
+	height: 10%;
+
+}
+#dialogue_l img{
+	width: 100%;
+}
+
+/* 人物对话提示 右 */
+#dialogue_r{
+	position: absolute;
+	top: 14%;
+	right: 13%;
+	width: 30%;
+	height: 10%;
+
+}
+#dialogue_r img{
+	width: 100%;
+}
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>游戏互动——捣练</title>
+		<link rel="stylesheet" type="text/css" href="css/daoLian.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/jquery.timerHandler.js"></script>
+		<script type="text/javascript" src="js/daoLian.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<style>
+			.bodybg {
+				background-image: url(img/backgroundimg.png);
+				background-size: contain;
+				position: absolute;
+				top: 0%;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body style="background-image: url(img/backgroundimg.png);
+	background-size: 200% ;">
+	
+		<!-- 音乐播放 -->
+		<div class="bg_music">
+			<div class="playerImgDiv">
+				<img class="player_img" src="music/player.png" alt="图片丢失"/>
+			</div>
+			<audio class="player" src="music/DY_LSJ.mp3" autoplay="autoplay" controls preload="auto"></audio>		
+		</div>
+		
+	
+		<!-- 介绍部分界面布局 -->
+		<div class="introDiv_style">
+			<div class="introDiv_style_text">
+				<ul class="introDiv_style_ul" >
+					<li class="p_head">
+						<p>【捣练】</p>
+					</li>
+					<p>
+						“练”是一种生丝织成品，色白练从缣出，
+						缣系白色，刚刚织成时，质地坚硬，必须经过沸煮和漂白，
+						再用杵捣之才能变得洁净和柔软
+					</p>
+				</ul>
+				<br />
+				<ul class="introDiv_style_ul" >
+					<li>
+						<p class="p_head">【目的】</p>
+					</li>
+					<ol class="introDiv_list_style">
+						<li>
+							·脱去丝线外层的丝胶，使丝织物呈现出晶莹透亮的光泽
+						</li>
+						<li>
+							·除去附着在丝线上的杂质，为下一步染色整理打好基础
+						</li>
+						<li>·经过锤炼，使丝织物轻盈柔，排列整齐，利于剪裁</li>
+					</ol>
+				</ul>
+				<br />
+				<ul class="introDiv_style_ul" >
+					<li>
+						<p class="p_head">【方法】</p>
+					</li>
+					<p>
+						把精炼剂（碱剂或酶剂）和热水加入袋子里，放到槽型石砧中，
+						两人对立，各持一根木杵上下捶打脱胶<br /><br />
+					
+					</p> 
+				</ul>
+				<br />
+			</div>
+			
+			<div class="introDiv_style_img">
+				<img  src="img/Q_character/1-1.gif" alt="图片丢失" class="Q_1" />
+				<img  src="img/Q_character/Q-1.png" alt="图片丢失" class="Q_2" />
+				<img  src="img/Q_character/Q-1.png" alt="图片丢失" class="Q_3" />
+			</div>
+			
+		</div>
+
+		<!-- 游戏部分界面布局 -->
+		<div class="gameDiv_style">
+			
+			
+			<!-- 材料选择框 -->
+			<div id="materialSelectDiv_style">
+				
+				<div id="M1">
+					<img data-tag = "hot" src="img/daoLian/D_coldwater.png" alt="图片丢失" class="material_img_style" />
+				</div>
+
+				<div id="M2">
+					<img data-tag = "col" src="img/daoLian/D_hotwater.png" alt="图片丢失" class="material_img_style" />
+				</div>
+
+				<div id="M3">
+					<img  data-tag = "vin" src="img/daoLian/D_vinegar.png" alt="图片丢失" class="material_img_style" />
+				</div>
+
+				<div id="M4">
+					<img  data-tag = "enz" src="img/daoLian/D_enzyme.png" alt="图片丢失" class="material_img_style" />
+				</div>
+
+				<div id="M5">
+					<img  data-tag = "ash" src="img/daoLian/D_plantash.png" alt="图片丢失" class="material_img_style" />
+					
+				</div>
+				
+			</div>
+			<!-- 人物选择框 -->
+			<div id="characterSelectDiv_style">
+				<img id="character" src="img/daoLian/DL.png" alt="图片丢失" />
+				
+				
+				<!-- 右边人物对话提示框 -->
+				<div id="dialogue_r">
+					<img id="dialogue_r1" src="img/daoLian/下一关.png" alt="图片丢失" />
+					<img id="dialogue_r2" src="img/daoLian/冷水.png" alt="图片丢失" />
+					<img id="dialogue_r3" src="img/daoLian/热水.png" alt="图片丢失" />
+					<img id="dialogue_r4" src="img/daoLian/草木灰-溶剂.png" alt="图片丢失" />
+					<img id="dialogue_r5" src="img/daoLian/草木灰.png" alt="图片丢失" />
+					<img id="dialogue_r6" src="img/daoLian/这是水-碱.png" alt="图片丢失" />
+					<img id="dialogue_r7" src="img/daoLian/这是水-酶.png" alt="图片丢失" />
+					<img id="dialogue_r8" src="img/daoLian/刚刚通关.png" alt="图片丢失" />
+				</div>
+				
+				<!-- 成功通关提示框 -->
+				<div id="success_div">
+					<p>恭喜通关，点击进入下一关</p>
+				</div>
+				
+				<!-- 左边人物对话提示框 -->
+				<div id="dialogue_l">
+					<img id="dialogue_l1" src="img/daoLian/这是草木灰-酶.png" alt="图片丢失" />
+					<img id="dialogue_l2" src="img/daoLian/这是酶-碱.png" alt="图片丢失" />
+					<img id="dialogue_l3" src="img/daoLian/这是醋-碱.png" alt="图片丢失" />
+					<img id="dialogue_l4" src="img/daoLian/这是醋-酶.png" alt="图片丢失" />
+					<img id="dialogue_l5" src="img/daoLian/酶-溶剂.png" alt="图片丢失" />
+					<img id="dialogue_l6" src="img/daoLian/酶.png" alt="图片丢失" />
+					<img id="dialogue_l7" src="img/daoLian/醋-溶剂.png" alt="图片丢失" />
+				</div>
+				
+			</div>
+			
+			<!-- 返回按钮 -->
+			<div id="back_btn">
+				<img id="back_btn_img"  src="img/common/back_button.png"/>
+			</div>
+			
+			
+			<!-- home按钮 -->
+			<div id="home_btn">
+				<img id="home_btn_img" src="img/common/home_btn.png" alt="图片丢失"/>
+			</div>
+			
+
+		</div>
+		
+		<!-- 消息提示框 -->
+		<div class="messageDiv_style">
+			<img id="messageDiv_style_img" src="img/common/tip_messageA_1.png" alt="图片丢失"/>
+			<p >请在材料框中点击选择一种【溶剂】</p>
+		</div>
+		
+	</body>
+</html>
